@@ -1,6 +1,8 @@
 # no-brain
 no-brain is a no-level programming language with zero brain abstraction, the
-true successor to JDSL.
+true successor to [JDSL][].
+
+[JDSL]: https://thedailywtf.com/articles/the-inner-json-effect
 
 ## Introduction
 
@@ -285,11 +287,13 @@ and katakana. Kanji is too serious.
 マジで
 ```
 
-To document legacy code, please use hentaigana to clearly communicate its
+To document legacy code, please use [hentaigana][] to clearly communicate its
 legacy. Nobody can read the code nor the documentation anyway.
 
 **Technical note**: The compiler will turn 10% of the comments to hentaigana if
 the source file has been untouched for over 30 days.
+
+[hentaigana]: https://www.unicode.org/L2/L2015/15239-hentaigana.pdf
 
 ## Conditionals
 
