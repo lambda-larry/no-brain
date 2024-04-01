@@ -112,8 +112,8 @@ Operators are postfixed with `_o`
 size_p
 my_length_f(i32_p my_array_ac[])
 {
-    return_k sizeof_ok my_array_of_strings_ac
-         /_o sizeof_ok *_o my_array_of_strings_ac;
+    return_k sizeof_ok my_array_ac
+         /_o sizeof_ok *_o my_array_ac;
 }
 
 size_p my_p_size_c = my_length_f(my_p_ac);
