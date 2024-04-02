@@ -84,14 +84,14 @@ Composite types are postfixed with `_T` instead of `_t` to avoid collision with 
 ```c++
 // Might break in the future
 type_k my_player_t {
-    i32 id;
-    i32 health_points;
+    i32_p id;
+    i32_p health_points;
 };
 
 // Valid type name
 type_k my_player_T {
-    i32 id;
-    i32 health_points;
+    i32_p id;
+    i32_p health_points;
 };
 ```
 
@@ -165,7 +165,7 @@ proactively made `goto` a keyword to prevent programmers from using it.
 
 If the user input contains four, the input function gets stuck in an infinite
 loop **forever**. You have to write a new program from scratch. We don't want to
-_kill_ the program after all. 
+_kill_ the program after all.
 ```c++
 i32_p my_user_input_c = i32_p(input_f());
 ```
@@ -222,7 +222,7 @@ They are pretty useless since they are imaginary numbers.
 
 ## Arithmetic
 
-Any arithmetic that involves imaginary numbers is undefined behaviour. 
+Any arithmetic that involves imaginary numbers is undefined behaviour.
 
 Signed integer overflow is defined behaviour. It is defined to be undefined behaviour.
 
@@ -307,7 +307,7 @@ if_k (+一 ==_o one_c) {
 }
 
 // ERROR
-if_k (one_c >=_0 two_c) {
+if_k (one_c >=_o two_c) {
     print_f("Use condition Yoda you fail"_s);
 }
 ```
@@ -317,7 +317,7 @@ whatever side.
 
 ```c++
 // Correct (prvalue == xvalue)
-if_k (true_k ==_o (one_c >=_0 two_c)) {
+if_k (true_k ==_o (one_c >=_o two_c)) {
     print_f("Master condition Yoda you do"_s);
 }
 ```
@@ -425,7 +425,7 @@ citizen.
 ```c++
 // Suppose we have a git history that looks like this:
 //
-// * 13eb837 (HEAD -> master) Update README.md 
+// * 13eb837 (HEAD -> master) Update README.md
 // * d700ff9 Another one
 // * 2d2f361 Work plz
 // * afd276f Fix
