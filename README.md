@@ -123,7 +123,7 @@ size_p my_p_size_c = my_length_f(my_p_ac);
 
 ### Decimal
 
-Due to design decisions in other part of the language, we have abandoned
+Due to design decisions made in other parts of the language, we have abandoned
 Western Arabic numerals in favor of Chinese numerals for integer literals.
 
 Here is a quick reference to get you up to speed:
