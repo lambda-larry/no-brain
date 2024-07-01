@@ -31,18 +31,18 @@ Imaginary numbers are not prefixed at all
 i32_p my_imagination_v = 1; // For demonstration only!
 ```
 
-String literals are postfixed with `_s`
+String literals are suffixed with `_s`
 ```c++
 string_T my_string_v = "Hello world!"_s;
 ```
 
-Variables are postfixed with `_v`
+Variables are suffixed with `_v`
 ```c++
 string_T my_string_v = "I can be mutated"_s;
 my_string_v = "Like a ninja turtle!"_s;
 ```
 
-Constants are postfixed with `_c`
+Constants are suffixed with `_c`
 ```c++
 string_T my_string_c = "Immoveable object"_s;
 my_string_c = "Unstoppable force"_s; // ERROR: my_string_c is a constant
@@ -52,14 +52,14 @@ my_string_c = "Unstoppable force"_s; // ERROR: my_string_c is a constant
 sure to _type_ check your code to enforce _type_ safety. Typos has been proven
 to waste hours of work.
 
-Keywords are postfixed with `_k`
+Keywords are suffixed with `_k`
 ```c++
 if_k (true_k) {
     print_f("Hello world"_s);
 }
 ```
 
-Functions are postfixed with `_f`
+Functions are suffixed with `_f`
 
 ```c++
 printf_f("{}"_s, "Hello world"_s);
@@ -75,12 +75,12 @@ To ensure compatibility, user defined identifiers are prefixed with `my_`
 my_log_f("Hello world"_s); // Because we don't have namespaces
 ```
 
-Primitives are postfixed with `_p`
+Primitives are suffixed with `_p`
 ```c++
 ipv6_p my_bind_address_c = localhost_ipv6_c;
 ```
 
-Composite types are postfixed with `_T` instead of `_t` to avoid collision with POSIX
+Composite types are suffixed with `_T` instead of `_t` to avoid collision with POSIX
 ```c++
 // Might break in the future
 type_k my_player_t {
@@ -95,7 +95,7 @@ type_k my_player_T {
 };
 ```
 
-Arrays are postfixed with `_a`
+Arrays are suffixed with `_a`
 
 ```c++
 string_T my_array_of_strings_ac[] = {
@@ -104,7 +104,7 @@ string_T my_array_of_strings_ac[] = {
 };
 ```
 
-Operators are postfixed with `_o`
+Operators are suffixed with `_o`
 
 ```c++
 // Equivalent to this C macro
