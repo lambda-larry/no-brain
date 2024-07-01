@@ -48,9 +48,10 @@ string_T my_string_c = "Immoveable object"_s;
 my_string_c = "Unstoppable force"_s; // ERROR: my_string_c is a constant
 ```
 
-**BEWARE** `c` and `v` is right next to each other on a QWERTY keyboard. Be
-sure to _type_ check your code to enforce _type_ safety. Typos has been proven
-to waste hours of work.
+> [!WARNING]
+> `c` and `v` is right next to each other on a QWERTY keyboard. Be sure to
+> _type_ check your code to enforce _type_ safety. Typos has been proven to
+> waste hours of work.
 
 Keywords are suffixed with `_k`
 ```c++
@@ -290,8 +291,9 @@ and katakana. Kanji is too serious.
 To document legacy code, please use [hentaigana][] to clearly communicate its
 legacy. Nobody can read the code nor the documentation anyway.
 
-**Technical note**: The compiler will turn 10% of the comments to hentaigana if
-the source file has been untouched for over 30 days.
+> [!NOTE]
+> The compiler will turn 10% of the comments to hentaigana if the source file
+> has been untouched for over 30 days.
 
 [hentaigana]: https://www.unicode.org/L2/L2015/15239-hentaigana.pdf
 
@@ -312,8 +314,8 @@ if_k (one_c >=_o two_c) {
 }
 ```
 
-**Technical note**: prvalue must be on the left-hand side, xvalue can be on
-whatever side.
+> [!TIP]
+> prvalue must be on the left-hand side, xvalue can be on whatever side.
 
 ```c++
 // Correct (prvalue == xvalue)
@@ -402,7 +404,9 @@ my_func_f(u32_p my_x_c, u32_p my_y_c)
 }
 ```
 
-**Technical limitations**: Does not work with mutual recursion.
+> [!WARNING]
+> Does not work with mutual recursion.
+
 
 ## Iterations
 no-brain does not have traditional loops like `for` and `while`, instead we
@@ -414,8 +418,8 @@ Undefined behaviour (aka ｱｯｶﾘ～ﾝ) is actually defined behaviour. It i
 to not have behaviour, thus allows the compiler to optimize the code's existence
 away. You can't have slow code, if there is no code.
 
-**Technical note**: You may occasionally hear the sound effect ｱｯｶﾘ～ﾝ as the
-code compiles.
+> [!NOTE]
+> You may occasionally hear the sound effect ｱｯｶﾘ～ﾝ as the code compiles.
 
 ## Version control support
 
