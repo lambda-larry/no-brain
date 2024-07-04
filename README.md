@@ -355,6 +355,12 @@ my_x_c nand_ok my_x_c; // NOT x
 // XOR has been left as an exercise for the reader.
 ```
 
+## Line ending
+
+Linux uses LF for line endings, Windoze uses CRLF. To prevent Windows
+programmers from checking out CRLF to version control, no-brain uses the
+null-byte (`\0`) as line ending.
+
 ## Functions
 
 Functions declared needs to have its return type on its own line.
